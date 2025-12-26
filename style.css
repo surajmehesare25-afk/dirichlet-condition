@@ -1,0 +1,124 @@
+/* style.css */
+
+/* 1. Global Reset & Background */
+body {
+    background: radial-gradient(circle at center, #1a1a2e 0%, #0f0f1a 100%);
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100-vh;
+    margin: 0;
+}
+
+/* 2. Main Container */
+.container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+/* 3. Typography */
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.2rem;
+    color: #00d4ff;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 2rem;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-size: 0.85rem;
+    margin: 15px 0 5px 5px;
+    color: #aaa;
+    text-transform: uppercase;
+}
+
+/* 4. Form Elements */
+input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace; /* Monospace for math formulas */
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #00d4ff;
+    box-shadow: 0 0 8px rgba(0, 212, 255, 0.4);
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    background: linear-gradient(135deg, #00d4ff 0%, #0072ff 100%);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 212, 255, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* 5. Results Area */
+.results {
+    margin-top: 25px;
+    padding-top: 15px;
+    text-align: left;
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #444;
+    margin: 20px 0;
+}
+
+.success {
+    color: #00ff88;
+    font-size: 1.2rem;
+    display: block;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+}
+
+.fail {
+    color: #ff4d4d;
+    font-size: 1.2rem;
+    display: block;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(255, 77, 77, 0.3);
+}
