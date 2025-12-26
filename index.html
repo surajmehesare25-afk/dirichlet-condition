@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dirichlet Condition Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Fourier Transform Existence Checker</h1>
+    <p class="subtitle">(Dirichlet Conditions)</p>
+
+    <label>Enter signal x(t):</label>
+    <input type="text" id="signal" placeholder="Example: Math.exp(-Math.abs(t))">
+
+    <label>Enter finite interval T:</label>
+    <input type="number" id="T" placeholder="Example: 10">
+
+    <button onclick="checkDirichlet()">Check Conditions</button>
+    <button onclick="plotSignal()">Plot Signal</button>
+
+    <div class="results" id="results"></div>
+
+    <canvas id="graph" width="400" height="250"></canvas>
+</div>
+
+<script src="new.js"></script>
+</body>
+</html>
